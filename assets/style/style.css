@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+:root {
+    --dark-accent: #171716;
+    --light-color: #fffcfa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark-accent);
+    scroll-behavior: smooth;
+}
+
+#container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark-accent);
+    & img {
+        width: 100px;
+    }
+}
+
+nav {
+    & li {
+        display: inline;
+    }
+    & a {
+        color: var(--light-color);
+        text-decoration: none;
+        font-size: 18px;
+        margin-right: 20px;
+        padding: 10px; 
+        font-family: "Bungee";
+        transition: .250s ease-in-out;
+    }
+    & a:hover {
+        color: red;
+    }
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("/assets/images/vani\ na\ gitari.webp") no-repeat;
+    background-size: cover;
+    height: 650px;
+    border-radius: 10px;
+    & h1 {
+        color: var(--light-color);
+        font-size: 60px;
+        font-family: "Bungee";
+        text-shadow: 0px 0px 25px #171716;
+    }
+}
+
+#about {
+    color: var(--light-color);
+    font-family: "DM Sans";
+    margin: 0 0 20px 0;
+    & h2 {
+        font-size: 40px;
+        padding: 10px;
+        background: linear-gradient(90deg, black, var(--dark-accent));
+        border-radius: 10px;
+    }
+    & p {
+        width: 85%;
+        font-size: 19.5px;
+        text-align: justify;
+        margin: 30px auto 0 auto;
+    }
+}
+
+#galerija {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+    & img {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        margin: 80px 0;
+        border-radius: 8px;
+    }
+}
+
+#raspored {
+    color: var(--light-color);
+    font-family: "DM Sans";
+    text-align: center;
+    & h2 {
+        margin: 20px;
+        font-family: "Bungee";
+        font-size: 38px;
+    }
+    & table {
+        width: 70%;
+        border: 1px solid black;
+        border-collapse: collapse;
+        font-size: 24px;
+        text-align: left;
+        margin: 0 auto;
+        & th {
+            padding: 20px;
+            border: 1px solid black;
+        }
+        & td {
+            padding: 20px;
+            border: 1px solid black;
+        }
+    }
+}
+
+footer {
+    margin: 80px 0 0 0;
+    font-family: "Bungee";
+    color: var(--light-color);
+    background: linear-gradient(90deg, black, var(--dark-accent));
+    border-radius: 10px;
+    & div {
+        padding: 20px;
+    }
+    & p {
+        font-family: "DM Sans";
+        text-align: left;
+        color: #a6a6a6;
+    }
+    & h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 95px;
+    }
+}
+
+div {
+    margin: 10px;
+}
